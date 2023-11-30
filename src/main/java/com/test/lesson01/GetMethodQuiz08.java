@@ -30,6 +30,8 @@ public class GetMethodQuiz08 extends HttpServlet{
 		        "집에 가는 길에 동네 맛집 가서 안주 사갑니다.",
 		        "자축 저 오늘 생일 이에요."));
 		
+		// add comment
+		
 		
 		
 		
