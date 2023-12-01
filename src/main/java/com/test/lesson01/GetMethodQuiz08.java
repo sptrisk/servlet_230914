@@ -32,7 +32,7 @@ public class GetMethodQuiz08 extends HttpServlet{
 		
 		// add comment
 		
-		
+		// 테스트 주석 추가
 		
 		
 		PrintWriter out = response.getWriter();
@@ -50,22 +50,26 @@ public class GetMethodQuiz08 extends HttpServlet{
 				
 			}
 		}
+//		
 		
 		
-		
-		// iterator
+		// iterator - 1번 방식
 		
 //		Iterator<String> iter = list.iterator();
 //		while(iter.hasNext()) {
 //			String line = iter.next();
+//		
+//			// 검색
+////			if (line.contains(keyword)) {
+////				out.print(line + "<br>");
+////			}
+//		
 //			if (line.contains(keyword)) {
-//				out.print(line + "<br>");
+//				String[] words = line.split(keyword);  // 0: 앞문장, 1: 뒷문장
+//				out.print(words[0] + "<b>" + keyword + "</b>" + words[1] +"<br>");
 //			}
 //		}
-		
-		
-		
-		
+	
 		out.print("</body></html>");
 		
 	}
