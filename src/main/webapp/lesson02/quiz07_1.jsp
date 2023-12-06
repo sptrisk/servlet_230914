@@ -44,16 +44,19 @@
 					String exception = request.getParameter("exception"); // null or "true"
 					// out.print(nametag);
 					// out.print(exception);
-					
+					boolean exclude = exception != null;
 					for (Map<String, Object> item : list){
 							if (item.get("menu").equals(nametag)){
-								if(exception.equals("true")){
-								
+								// skip 조건 : 체크가 되어있고 스킵 되어야 하는 조건이면 continue
+								if(exclude && (double)item.get("point") <= 4){
+									continue;
+								}
 				%>			
 				<tr>
 				<td><%= item.get("menu")%></td>  <td><%= item.get("name")%></td>  <td><%= item.get("point") %></td>
 				</tr>
-						<%		}
+						<%			
+								
 							}
 						}%>
 			</tbody>
