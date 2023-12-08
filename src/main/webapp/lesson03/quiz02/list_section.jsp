@@ -107,7 +107,7 @@
 		%>
 		<tr>
 			<td><%=music.get("id")%></td>
-			<td><a href="#"><%=music.get("title")%></td>
+			<td><a href="/lesson03/quiz02/content_layout.jsp?id=<%=music.get("id")%>"><%=music.get("title")%></td>
 			<td><%=music.get("album")%></td>
 		</tr>
 		<%

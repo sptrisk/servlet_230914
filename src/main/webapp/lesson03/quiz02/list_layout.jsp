@@ -16,6 +16,8 @@
 	nav {height : 50px;}
 	.content{min-height:500px}
 	footer{height:50px}
+	
+	.music-info{font-size:13px; color:#999;}
 </style>
 </head>
 <body>
